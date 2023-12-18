@@ -5,6 +5,9 @@ export default {
     'src/**/*.{css,js}',
   ],
   theme: {
+    fontFamily: {
+      'sans': 'Gotham'
+    },
     extend: {},
   },
   plugins: [],
