@@ -6,10 +6,3 @@
     display: none;
 }
 
-.diapo{
-    transform: rotate(90deg) translateY(-100vh);
-}
-
-.body{
-    transform: rotate(-90deg) translateX(-100vh);
-}
