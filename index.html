@@ -8,8 +8,8 @@
   </head>
 
   <body class="bg-[#161616] overflow-x-hidden text-[#F3F3F3] font-thin">
-  <section id="frise" class="frise h-screen overflow-x-scroll fixed font-sans left-0 top-0 z-20">
-    <div class="py-[50vh] h-[300%] flex flex-col justify-between">
+  <section class="frise h-screen overflow-x-scroll fixed font-sans left-0 top-0 z-20">
+    <div id="frise"  class="py-[50vh] h-[300%] flex flex-col justify-between">
       <div class="flex items-center"><div class="w-[20px] h-[0.5px] mr-4 bg-white"></div><h3 class="text-white text-[32px]">HOME</h3></div>
       <div class="flex items-center"><div id="line-2" class="h-[0.5px] mr-4 bg-white"></div><h3 id="title-2" class="text-white">1916</h3></div>
       <div class="flex items-center"><div class="w-[20px] h-[0.5px] mr-4 bg-white"></div><h3 class="text-white text-[16px]">1917</h3></div>
@@ -24,15 +24,15 @@
 
 
   <section id="slides" class="body overflow-x-hidden">
-      <section  class="diapo w-[900vw] h-screen flex flex-row">
+      <section  class="diapo w-[1000vw] h-screen flex">
 
 
       <!-- SECTION HERO-->
           <section class="slide flex justify-center items-center relative w-screen h-screen">
-              <h1 class="w-[70%] ml-6 font-bold text-8xl pt-[70px]">LA SNEAKERS, COMME VOUS NE L'AVEZ JAMAIS VUE.</h1>
+              <h1 id="title" class="w-[70%] ml-6 font-bold text-8xl pt-[70px]">LA SNEAKERS, COMME VOUS NE L'AVEZ JAMAIS VUE.</h1>
 
               <img id="macaron" src="public/macaron.svg" class="z-10 absolute top-[-450px] right-[-290px]">
-              <img src="public/img-hero.svg" class="absolute bottom-0 right-[-350px]">
+              <img id="sneakers" src="public/img-hero.svg" class="absolute bottom-0 right-[-350px]">
 
               <div class="z-0 absolute top-[-400px] right-[-350px] bg-[#AF0000] w-[900px] h-[600px] rounded-full blur-[100px]"></div>
           </section>
@@ -44,20 +44,20 @@
             <img class="absolute right-[-250px]" src="public/img-1916.svg">
             <div class="mt-[300px] w-[60%] text-justify mx-auto ">
                 <h2 class="scroll uppercase font-bold text-[64px]">LES ORIGINES</h2>
-                <p>À l’origine utilisées pour les activités sportives comme le tennis ou le basket, les sneakers se sont progressivement éloignées de cet usage pour alors devenir des éléments de mode, portés au quotidien.<br/>
+                <p id="text-origine">À l’origine utilisées pour les activités sportives comme le tennis ou le basket, les sneakers se sont progressivement éloignées de cet usage pour alors devenir des éléments de mode, portés au quotidien.<br/>
                     La chaussure considérée comme la première sneakers remonte à 1916, avec la « Keds », premier modèle élaboré avec des semelles en caoutchouc. Ces dernières permettent aux joueurs de tennis d’avoir plus de rebond lors de leur pratique, mais cette paire sera également remarqué par son confort et sa discrétion, qui lui permettra peu à peu d’être détournée de son usage initiale,
                     c’est-à-dire sportif, pour en faire une paire portée au quotidien.
                 </p>
             </div>
 
-            <h3 class="text-right text-[300px] font-black opacity-[0.5] absolute bottom-[-50px] right-0">1916</h3>
+            <h3 id="title-origine" class="text-right text-[300px] font-black opacity-[0.5] absolute bottom-[-50px] right-0">1916</h3>
           </section>
           <!-- END 1916-->
 
 
           <!-- SECTION 1917-->
 
-          <section  class="slide flex flex-col justify-center items-center relative w-screen h-screen">
+          <section  class=" slide flex flex-col justify-center items-center relative w-screen h-screen">
               <img class="z-10 absolute bottom-[-60px] right-[-100px]" src="public/converse.png">
               <h2 class="uppercase font-bold text-[64px]">LES DÉBUTS CHEZ CONVERSE</h2>
               <h3 class="text-right text-[300px] font-black opacity-[0.5]">1917</h3>
@@ -70,7 +70,7 @@
 
 
     <!-- SECTION 1947-->
-      <section class="slide flex flex-col justify-center items-center relative w-screen h-screen">
+      <section class=" slide flex flex-col justify-center items-center relative w-screen h-screen">
           <span>Et si… une rivalité entre deux frères avait créé les deux marques de sport les plus emblématiques, qui ne sont autres que Puma et Adidas ?</span>
           <h2 class="scroll uppercase font-bold text-[64px] text-center w-[70%]">Adidas et Puma, une affaire de famille</h2>
           <div class="flex-row">
@@ -173,7 +173,7 @@
 
 
         <!-- FUTUR -->
-            <section class="slide w-screen h-screen">
+            <section class="slide border-1 w-screen h-screen">
               <h2 class="uppercase">nike x snickers</h2>
 
                 <h3>2045</h3>
