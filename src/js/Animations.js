@@ -30,18 +30,7 @@ gsap.to("#frise", {
     }
 });
 
-gsap.from(".scroll", {
-    y: -120,
-    ease: "power1",
-    opacity: 0,
-    duration: 2,
-    scrollTrigger: {
-        trigger: "#origines",
-        containerAnimation: scrollTween,
-        start: "left center",
-        toggleActions: "play none none reset"
-    }
-});
+
 
 gsap.from("#macaron", {
     rotate: "360deg",
@@ -77,7 +66,7 @@ gsap.to("#sneakers", {
     }
 });
 
-    let typeSplit = new SplitType('#title, #text-origine', {
+    let typeSplit = new SplitType('#title, #text-origine, #subtitle-puma', {
     types: 'lines, words, chars',
     tagName: 'span'
 })
@@ -87,10 +76,23 @@ gsap.to("#sneakers", {
     opacity: 0,
     duration: 0.1,
     ease: 'power1.out',
-    stagger: 0.1,
+    stagger: 0.05,
 })
 
 /* 1916 */
+
+gsap.from("#subtitle-origine", {
+    y: -120,
+    ease: "power1",
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#origines",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+});
 
 gsap.to("#title-origine", {
     x: -1000,
@@ -103,3 +105,125 @@ gsap.to("#title-origine", {
         toggleActions: "play none none reset"
     }
 });
+
+gsap.from("#text-origine", {
+    x: 200,
+    ease: "power1",
+    opacity: 0,
+    duration: 0.5,
+    delay: 0.5,
+    scrollTrigger: {
+        trigger: "#origines",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#img-origine", {
+    rotate: "360deg",
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#origines",
+        containerAnimation: scrollTween,
+        start: 0,
+        end: 360,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+/* 1917 */
+
+gsap.from("#subtitle-converse", {
+    x: -500,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#converse",
+        containerAnimation: scrollTween,
+        start: 0,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.to("#title-converse", {
+    x: 500,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#converse",
+        containerAnimation: scrollTween,
+        start: 0,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#text-converse", {
+    x: 200,
+    ease: "power1",
+    opacity: 0,
+    duration: 0.5,
+    delay: 0.5,
+    scrollTrigger: {
+        trigger: "#converse",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+});
+
+/* 1947 */
+
+gsap.to("#title-puma", {
+    x: -500,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#converse",
+        containerAnimation: scrollTween,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#text-puma", {
+    y: -200,
+    ease: "power1",
+    opacity: 0,
+    duration: 0.5,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#puma",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#text-adidas", {
+    y: 200,
+    ease: "power1",
+    opacity: 0,
+    duration: 0.5,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#puma",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from('#subtitle-puma .char', {
+    y: '100%',
+    opacity: 0,
+    duration: 0.1,
+    ease: 'power1.out',
+    stagger: 0.05,
+    scrollTrigger: {
+        trigger: "#puma",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+})
