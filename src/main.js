@@ -1,3 +1,3 @@
 import './css/style.css'
-import './js/Frise.js'
+import './js/Home.js'
 
