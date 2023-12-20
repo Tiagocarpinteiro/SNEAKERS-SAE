@@ -12,4 +12,4 @@ Vous pouvez accéder au projet au lien suivant : https://sneakers.tiagocarpintei
 BUG : 
 - la vidéo ne se lit pas très bien ;
 - la frise chrnologique n'est pas cliquable comme souhaité.
-- souci avec les polices, si elles ne sont pas téléchargées. (mise à disposition d'un ZIP avec les fonts) 
+- souci avec les polices, si elles ne sont pas téléchargées. (mise à disposition d'un ZIP avec les fonts dans /public) 
