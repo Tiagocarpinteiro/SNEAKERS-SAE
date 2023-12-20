@@ -17,20 +17,11 @@ let scrollTween = gsap.to(sections, {
     }
 });
 
-gsap.to("#frise", {
-    y: "-100%",
-    ease: "none",
-    duration: 10,
-    scrollTrigger: {
-        containerAnimation: scrollTween,
-        start: 0,
-        end: 360*9,
-        scrub: true,
-        toggleActions: "play none none reset"
-    }
-});
-
-
+document.addEventListener('scroll', () => {
+    let frise = document.getElementById("frise")
+    console.log((window.pageYOffset*document.getElementById("frise").scrollHeight)/document.getElementById("slides").scrollHeight)
+    document.getElementById("frise").scroll(0, 1000)
+})
 
 gsap.from("#macaron", {
     rotate: "360deg",
@@ -227,3 +218,71 @@ gsap.from('#subtitle-puma .char', {
         toggleActions: "play none none reset"
     }
 })
+
+gsap.from('#img-adidas', {
+    x: -500,
+    opacity: 0,
+    delay: 2,
+    scrollTrigger: {
+        trigger: "#puma",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+})
+
+gsap.from('#img-puma', {
+    x: 500,
+    opacity: 0,
+    delay: 2,
+    scrollTrigger: {
+        trigger: "#puma",
+        containerAnimation: scrollTween,
+        start: "left center",
+        toggleActions: "play none none reset"
+    }
+})
+
+/* 1982 */
+
+gsap.from("#bandeau-airforce", {
+    x: 1000,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#airforce",
+        containerAnimation: scrollTween,
+        start: 0,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#img-afone", {
+    rotate: -45,
+    y: 200,
+    x: 500,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#airforce",
+        containerAnimation: scrollTween,
+        start: "-25%",
+        end: "0%",
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.from("#title-afone", {
+    x: 1000,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#airforce",
+        containerAnimation: scrollTween,
+        start: 0,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+/* 1985 */
+

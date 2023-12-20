@@ -9,7 +9,7 @@
 
   <body class="bg-[#161616] overflow-x-hidden text-[#F3F3F3] font-thin">
   <section class="frise h-screen overflow-x-scroll fixed font-sans left-0 top-0 z-20">
-    <div id="frise"  class="py-[50vh] h-[300%] flex flex-col justify-between">
+    <div id="frise" class="py-[50vh] h-[300%] flex flex-col justify-between">
       <div class="flex items-center"><div class="w-[20px] h-[0.5px] mr-4 bg-white"></div><h3 class="text-white text-[32px]">HOME</h3></div>
       <div class="flex items-center"><div id="line-2" class="h-[0.5px] mr-4 bg-white"></div><h3 id="title-2" class="text-white">1916</h3></div>
       <div class="flex items-center"><div class="w-[20px] h-[0.5px] mr-4 bg-white"></div><h3 class="text-white text-[16px]">1917</h3></div>
@@ -75,7 +75,7 @@
           <div class="mt-[96px]">
               <h2 id="subtitle-puma" class="scroll uppercase font-bold text-[64px] text-left w-full">Adidas, Puma : affaire familiale</h2>
                   <div class="flex">
-                  <img src="public/img-1947-logo_A-ancien.svg">
+                  <img id="img-adidas" src="public/img-1947-logo_A-ancien.svg">
                   <p id="text-adidas" class="w-[60%] ml-8">Les différents tempéraments des deux frères finissent par créer une rivalité entre eux, et conduisent en 1948 à leur séparation. Rudolf décide de prendre son envol et de créer la marque PUMA la même année. Adolf fondera la célèbre marque aux trois bandes Adidas, né de la contraction de son surnom « Adi » et de son nom de famille « Dassler ».<br/>
                           Aujourd’hui, les deux marques sont de véritables mastodontes dans l’univers du sportswear, et la rivalité persiste toujours aujourd’hui. Cette concurrence entre les deux aura posé les bases du sport business, et révélé les vices du sport moderne, entre sponsoring aux montants exorbitants et lobbying.
                   </p>
@@ -84,7 +84,7 @@
 
 
           <img src="public/img-1947-logo_A.svg" class="absolute right-0 bottom-0 opacity-[50%]">
-          <img src="public/img-1947-logo_P.svg" class="absolute top-[30px] right-[30px]">
+          <img id="img-puma" src="public/img-1947-logo_P.svg" class="absolute top-[30px] right-[30px]">
 
         <h3 id="title-puma" class="text-right text-[300px] font-black opacity-[0.25] absolute top-[-200px] right-[100px]">1947</h3>
       </section>
@@ -92,7 +92,7 @@
 
 
         <!-- SECTION 1982-->
-            <section class="slide relative w-screen h-screen">
+            <section id="airforce" class="slide relative w-screen h-screen">
                 <div class=" flex items-center ml-[128px] mt-[32px] text-justify">
                   <h2 class="scroll uppercase font-bold text-[64px] text-right mr-[20px] leading-none">Air<br/>Force<br/>One</h2>
                     <p class="w-[70%]">
@@ -103,33 +103,32 @@
                 </div>
 
                 <!-- ÉLÉMENT 3D -->
-                <img class="mx-auto mt-[32px]" src="/air-force-1-low-nocta-clb-1%201.png">
+                <img id="img-afone" class="mx-auto mt-[32px]" src="/air-force-1-low-nocta-clb-1%201.png">
 
 
 
-                <h3 class="text-center text-[300px] font-black opacity-[0.25] absolute top-[200px] left-0">1982</h3>
+                <h3 id="title-afone" class="text-center text-[300px] font-black opacity-[0.25] absolute top-[200px] left-0">1982</h3>
 
 
-                <p class="uppercase bg-[#832828] text-[128px] font-black absolute whitespace-nowrap left-[-160px] top-1/2 -z-20 -rotate-[40deg]">air force one - AF1 - air force one</p>
+                <div class="absolute left-[-160px] top-1/2 -z-20 -rotate-[40deg]"><p id="bandeau-airforce" class="uppercase bg-[#832828] text-[128px] font-black whitespace-nowrap ">air force one - AF1 - air force one</p></div>
             </section>
         <!-- END 1982-->
 
 
         <!-- SECTION 1985-->
-            <section class="slide w-screen h-screen">
+            <section id="jordan" class="slide w-screen h-screen">
 
                 <!-- ÉLÉMENT 3D -->
 
-                <div class="flex">
-                        <p>3 ans après l’iconique Air Force One, c’est au tour de l’emblématique Air Jordan One de Nike de marquer l’histoire de la sneakers, en collaborant avec une jeune recrue des Chicago Bulls, Michael Jordan.<br/>
-                        À la recherche d’un équipementier lors de son entrée en NBA, Jordan a décidé de signer le contrat que lui a proposé Nike, entre ses autres concurrents tels que Converse ou Spot Bilt. À la clé de ce contrat : un salaire de 500 000$ par an, 25% de commission sur chaque paire vendue, ainsi que la création d’une ligne vestimentaire à son nom.<br/>
+                <div class="flex text-justify items-center">
+                        <p>3 ans après l’iconique Air Force One, c’est au tour de l’emblématique Air Jordan One de Nike de marquer l’histoire de la sneakers, en collaborant avec une jeune recrue des Chicago Bulls, Michael Jordan. À la recherche d’un équipementier lors de son entrée en NBA, Jordan a décidé de signer le contrat que lui a proposé Nike, entre ses autres concurrents tels que Converse ou Spot Bilt. À la clé de ce contrat : un salaire de 500 000$ par an, 25% de commission sur chaque paire vendue, ainsi que la création d’une ligne vestimentaire à son nom.
                         Sur les traces de la Air Ship, première paire portée par Jordan sur les matchs de NBA, aux coloris noir et rouge, le célèbre Peter Moore design alors la AJI, dont un des premiers coloris sera le coloris « Bred ». Jordan porte cette paire lors d’un match de NBA et devra payer une amende de 5000$ car celle-ci ne correspond pas aux couleurs de son équipe. Elle fût même interdit pendant les match car Nike payait les amendes du joueur afin de faire la promotion de la paire.
                         La Jordan 1 est aujourd’hui une des paires les plus emblématiques de l’histoire de la sneakers, et la filiale de Nike ne cesse elle-aussi de collaborer avec des personnalités comme Travis Scott, ou des marques comme Off-White.
                     </p>
                         <h2 class="scroll uppercase font-bold text-[64px] text-right mr-[20px] leading-none">jordan</h2>
                 </div>
-
-                <h3 class="text-center text-[300px] font-black opacity-[0.25] leading-[0.75] absolute top-[-100px] right-[200px]">1<br>9<br>8<br>5</h3>
+                <div class="z-0 absolute bottom-[-400px] right-[-350px] bg-[#45494D] w-[900px] h-[600px] rounded-full blur-[100px]"></div>
+                <h3 id="title-jordan" class="text-center text-[300px] font-black opacity-[0.25] leading-[0.75] absolute top-[-100px] right-[200px]">1<br>9<br>8<br>5</h3>
             </section>
         <!-- END 1985-->
 
