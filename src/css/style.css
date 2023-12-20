@@ -6,3 +6,22 @@
     display: none;
 }
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham-Bold.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Black.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-BookItalic.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Light.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Thin.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-ThinItalic.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-XLight.otf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Bold.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Black.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-BookItalic.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Light.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-Thin.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-ThinItalic.ttf'); /* IE9 Compat Modes */
+    src: url('/fonts/Gotham-XLight.ttf'); /* IE9 Compat Modes */
+    font-weight: normal;
+    font-style: normal;
+}
