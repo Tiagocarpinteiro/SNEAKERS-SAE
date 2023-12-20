@@ -306,6 +306,20 @@ gsap.to("#title-jordan", {
     }
 });
 
+gsap.to("#img-jordan", {
+    x: -500,
+    y: 100,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#jordan",
+        containerAnimation: scrollTween,
+        start: "-50%",
+        end: "75%",
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
 const video = document.querySelector(".video-background");
 let src = video.currentSrc || video.src;
 console.log(video, src);
