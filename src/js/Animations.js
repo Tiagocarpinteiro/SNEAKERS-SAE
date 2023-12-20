@@ -320,6 +320,29 @@ gsap.to("#img-jordan", {
     }
 });
 
+gsap.to("#shoes-down", {
+    x: -200,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#today",
+        containerAnimation: scrollTween,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+gsap.to("#shoes-up", {
+    x: 200,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#today",
+        containerAnimation: scrollTween,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
+
+
 const video = document.querySelector(".video-background");
 let src = video.currentSrc || video.src;
 console.log(video, src);
