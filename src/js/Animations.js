@@ -17,11 +17,18 @@ let scrollTween = gsap.to(sections, {
     }
 });
 
-document.addEventListener('scroll', () => {
-    let frise = document.getElementById("frise")
-    console.log((window.pageYOffset*document.getElementById("frise").scrollHeight)/document.getElementById("slides").scrollHeight)
-    document.getElementById("frise").scroll(0, 1000)
-})
+gsap.to("#frise", {
+    y: "-100%",
+    ease: "none",
+    duration: 10,
+    scrollTrigger: {
+        containerAnimation: scrollTween,
+        start: 0,
+        end: 360*13,
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
 
 gsap.from("#macaron", {
     rotate: "360deg",
@@ -286,3 +293,15 @@ gsap.from("#title-afone", {
 
 /* 1985 */
 
+gsap.to("#title-jordan", {
+    y: -500,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#jordan",
+        containerAnimation: scrollTween,
+        start: "-50%",
+        end: "75%",
+        scrub: true,
+        toggleActions: "play none none reset"
+    }
+});
